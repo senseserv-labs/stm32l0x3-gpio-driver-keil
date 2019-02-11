@@ -140,14 +140,15 @@ void hal_gpio_configure_interrupt(uint16_t pin_no, int_edge_sel_t edge_sel)
 	else if (edge_sel == INT_FALLING_EDGE)
 	{
 		EXTI->FTSR |= 1 << pin_no;
-	}else if (edge_sel == INT_RISING_FALLING_EDGE )
+	}
+	else if (edge_sel == INT_RISING_FALLING_EDGE )
 	{
 		EXTI->FTSR |= 1 << pin_no;
 		EXTI->RTSR |= 1 << pin_no;
 	}
 	else
 	{
-		 ;//TODO
+		 ; // Do nothing...
 	}
 }
 
@@ -172,7 +173,6 @@ void 	hal_gpio_clear_interrupt(uint16_t pin)
 {
 	if(EXTI->PR & (1 << pin ))
 	{
-		EXTI->PR |= 1 << pin;
+		EXTI->PR |= 1 << pin; /* Clear the sticky pending interrupt bit */
 	}
-
 }

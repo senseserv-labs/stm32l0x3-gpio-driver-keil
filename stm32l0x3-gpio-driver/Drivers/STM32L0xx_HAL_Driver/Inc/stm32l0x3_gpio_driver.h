@@ -20,25 +20,25 @@
  */
 
 /* GPIO Mode Settings values*/
-#define GPIO_PIN_INPUT_MODE															( (uint32_t) 0x00 )
-#define GPIO_PIN_OUTPUT_MODE                           	( (uint32_t) 0x01 )
-#define GPIO_PIN_ALT_FUN_MODE                          	( (uint32_t) 0x02 )
-#define GPIO_PIN_ANALOG_MODE														( (unit32_t) 0x03 )		/* reset state */
+#define GPIO_PIN_INPUT_MODE									( (uint32_t) 0x00 )
+#define GPIO_PIN_OUTPUT_MODE                ( (uint32_t) 0x01 )
+#define GPIO_PIN_ALT_FUN_MODE               ( (uint32_t) 0x02 )
+#define GPIO_PIN_ANALOG_MODE								( (unit32_t) 0x03 )		/* reset state */
 
 /* GPIO Output type selection values */
-#define GPIO_PIN_OP_TYPE_PUSHPULL												( (uint32_t) 0x00 )		/* reset state */
-#define GPIO_PIN_OP_TYPE_OPEN_DRAIN                    	( (uint32_t) 0x01 )
+#define GPIO_PIN_OP_TYPE_PUSHPULL						( (uint32_t) 0x00 )		/* reset state */
+#define GPIO_PIN_OP_TYPE_OPEN_DRAIN         ( (uint32_t) 0x01 )
 
 /* GPIO Speed type selection values */
-#define GPIO_PIN_SPEED_LOW                             	( (uint32_t) 0x00 )
-#define GPIO_PIN_SPEED_MEDIUM                          	( (uint32_t) 0x01 )
-#define GPIO_PIN_SPEED_HIGH                            	( (uint32_t) 0x02 )
-#define GPIO_PIN_SPEED_VERY_HIGH                       	( (uint32_t) 0x03 )
+#define GPIO_PIN_SPEED_LOW                  ( (uint32_t) 0x00 )
+#define GPIO_PIN_SPEED_MEDIUM               ( (uint32_t) 0x01 )
+#define GPIO_PIN_SPEED_HIGH                 ( (uint32_t) 0x02 )
+#define GPIO_PIN_SPEED_VERY_HIGH            ( (uint32_t) 0x03 )
 
 /* GPIO pull up / pull down  selection values */
-#define GPIO_PIN_NO_PULL_PUSH                          	( (uint32_t) 0x00 )
-#define GPIO_PIN_PULL_UP                               	( (uint32_t) 0x01 )
-#define GPIO_PIN_PULL_DOWN                             	( (uint32_t) 0x02 )
+#define GPIO_PIN_NO_PULL_PUSH               ( (uint32_t) 0x00 )
+#define GPIO_PIN_PULL_UP                    ( (uint32_t) 0x01 )
+#define GPIO_PIN_PULL_DOWN									( (uint32_t) 0x02 )
 
 /* GPIO port base addresses */
 #define GPIO_PORT_A  GPIOA
