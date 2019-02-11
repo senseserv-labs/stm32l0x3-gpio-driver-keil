@@ -3,56 +3,59 @@
 # Custom edit by: Kristoffer Dominic Amora
 
 ### Keil ###
-# something maybe need to add
-# *.bat  # generate batch file
-# output/project_name # uv project generate without file ext
-# *.SRC # generate source file
-# *.src
+# MX Ptoject
+stm32l0x3-gpio-driver/*.mxproject
 
+# --- STMCubeMX ---
+#stm32l0x3-gpio-driver/*.ioc
+
+### --- MDK ARM build output files --- ###
 # Prerequisites
-stm32l0x3-gpio-driver/*.d
-stm32l0x3-gpio-driver/*.dep
-# Object files
-stm32l0x3-gpio-driver/*.o
-stm32l0x3-gpio-driver/*.obj
-stm32l0x3-gpio-driver/*.OBJ
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.d
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.dep
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.crf
 
-# Listing Files
-stm32l0x3-gpio-driver/*.COD
-stm32l0x3-gpio-driver/*.cod
-stm32l0x3-gpio-driver/*.[Ii]
-stm32l0x3-gpio-driver/*.LST
-stm32l0x3-gpio-driver/*.lst
-stm32l0x3-gpio-driver/*.MAP
-stm32l0x3-gpio-driver/*.map
-stm32l0x3-gpio-driver/*.[Mm]51
-stm32l0x3-gpio-driver/*.[Mm]66
-stm32l0x3-gpio-driver/*.SCR
-stm32l0x3-gpio-driver/*.scr
+# --- Object files ---
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.o
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.obj
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.OBJ
 
-# LINK output
-stm32l0x3-gpio-driver/*.ABS
+# --- Listing Files ---
+#stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.COD
+#stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.cod
+#stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.[Ii]
+stm32l0x3-gpio-driver/MDK-ARM/*.LST
+stm32l0x3-gpio-driver/MDK-ARM/*.lst
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.MAP
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.map
+#stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.[Mm]51
+#stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.[Mm]66
+#stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.SCR
+#stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.scr
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.sct
 
-# Libraries
-stm32l0x3-gpio-driver/*.lib
-stm32l0x3-gpio-driver/*.LIB
+# --- LINK output ---
+stm32l0x3-gpio-driver/MDK-ARM/*.ABS
 
+# --- Libraries ---
+#stm32l0x3-gpio-driver/MDK-ARM/*.lib
+#stm32l0x3-gpio-driver/MDK-ARM/*.LIB
 
-# uv output
-stm32l0x3-gpio-driver/*.lnp
-stm32l0x3-gpio-driver/*.build_log.htm
-stm32l0x3-gpio-driver/*.HEX
-stm32l0x3-gpio-driver/*.hex
+# --- uVision Output ---
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.lnp
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.build_log.htm
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.htm
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.HEX
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.hex
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.axf
 
+# --- Build Files ---
+#stm32l0x3-gpio-driver/MDK-ARM/*._IA
+#stm32l0x3-gpio-driver/MDK-ARM/*.__[Ii]
+#stm32l0x3-gpio-driver/MDK-ARM/*._[Ii][Ii]
 
-# Build Files
-stm32l0x3-gpio-driver/*._IA
-stm32l0x3-gpio-driver/*.__[Ii]
-stm32l0x3-gpio-driver/*._[Ii][Ii]
-
-# project
-stm32l0x3-gpio-driver/*.uvgui.*
-stm32l0x3-gpio-driver/*.uvguix.*
-
+# --- uVision Project ---
+stm32l0x3-gpio-driver/MDK-ARM/*.uvgui.*
+stm32l0x3-gpio-driver/MDK-ARM/*.uvguix.*
 
 # End of https://www.gitignore.io/api/keil
