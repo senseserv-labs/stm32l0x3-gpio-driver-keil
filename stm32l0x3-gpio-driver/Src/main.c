@@ -39,6 +39,13 @@ int main(void)
 
 	/* Initializes the LEDs */
 	led_init();	// TODO: Transfer to led driver source file.
+	
+	/* Configure the button interrupt as falling edge */
+	hal_gpio_configure_interrupt(GPIO_BUTTON_PIN, INT_RISING_FALLING_EDGE);
+	
+	/* Enable the interrupt on EXTI0 line */
+	/* Button is mapped within EXTI 0 - 1 */
+	hal_gpio_enable_interrupt(GPIO_BUTTON_PIN, EXTI0_1_IRQn);
 
 	while(1)
 	{
@@ -58,13 +65,26 @@ int main(void)
 		led_turn_on(GPIO_PORT_A, LED_RED);
 		led_turn_on(GPIO_PORT_B, LED_GREEN);
 
-		for(i=0;i < 500000; i++);
+		for(i=0; i < 500000; i++);
 
 		led_turn_off(GPIO_PORT_A, LED_RED);
 		led_turn_off(GPIO_PORT_B, LED_GREEN);
 
 		for(i=0; i < 500000; i++);
 	}
+}
 
-	//return 0;
+/**
+	* @brief  ISR for the configured EXTI0_1 interrupt (User button on the discovery board)  
+	* @retval None
+	*/
+void EXTI0_IRQHandler(void)
+{
+	/* Make sure to clear the sticky pending interrupt bit first 
+	 * of EXTI pending register.
+ 	 */
+  hal_gpio_clear_interrupt(GPIO_BUTTON_PIN);
+
+	led_toggle(GPIOD,LED_RED);
+	led_toggle(GPIOD,LED_GREEN);
 }

@@ -20,12 +20,14 @@ stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.o
 stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.obj
 stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.OBJ
 
-# --- Listing Files ---
+# --- Listing and DBG Files ---
 #stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.COD
 #stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.cod
 #stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.[Ii]
+stm32l0x3-gpio-driver/MDK-ARM/*.scvd
 stm32l0x3-gpio-driver/MDK-ARM/*.LST
 stm32l0x3-gpio-driver/MDK-ARM/*.lst
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.iex
 stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.MAP
 stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.map
 #stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.[Mm]51
@@ -57,5 +59,7 @@ stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.axf
 # --- uVision Project ---
 stm32l0x3-gpio-driver/MDK-ARM/*.uvgui.*
 stm32l0x3-gpio-driver/MDK-ARM/*.uvguix.*
+#stm32l0x3-gpio-driver/MDK-ARM/*.uvoptx.*
+#stm32l0x3-gpio-driver/MDK-ARM/*.uvprojx.*
 
 # End of https://www.gitignore.io/api/keil
