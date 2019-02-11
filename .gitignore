@@ -1,5 +1,6 @@
 # Created by https://www.gitignore.io/api/keil
 # Edit at https://www.gitignore.io/?templates=keil
+# Custom edit by: Kristoffer Dominic Amora
 
 ### Keil ###
 # something maybe need to add
@@ -9,49 +10,49 @@
 # *.src
 
 # Prerequisites
-*.d
-*.dep
+stm32l0x3-gpio-driver/*.d
+stm32l0x3-gpio-driver/*.dep
 # Object files
-*.o
-*.obj
-*.OBJ
+stm32l0x3-gpio-driver/*.o
+stm32l0x3-gpio-driver/*.obj
+stm32l0x3-gpio-driver/*.OBJ
 
 # Listing Files
-*.COD
-*.cod
-*.[Ii]
-*.LST
-*.lst
-*.MAP
-*.map
-*.[Mm]51
-*.[Mm]66
-*.SCR
-*.scr
+stm32l0x3-gpio-driver/*.COD
+stm32l0x3-gpio-driver/*.cod
+stm32l0x3-gpio-driver/*.[Ii]
+stm32l0x3-gpio-driver/*.LST
+stm32l0x3-gpio-driver/*.lst
+stm32l0x3-gpio-driver/*.MAP
+stm32l0x3-gpio-driver/*.map
+stm32l0x3-gpio-driver/*.[Mm]51
+stm32l0x3-gpio-driver/*.[Mm]66
+stm32l0x3-gpio-driver/*.SCR
+stm32l0x3-gpio-driver/*.scr
 
 # LINK output
-*.ABS
+stm32l0x3-gpio-driver/*.ABS
 
 # Libraries
-*.lib
-*.LIB
+stm32l0x3-gpio-driver/*.lib
+stm32l0x3-gpio-driver/*.LIB
 
 
 # uv output
-*.lnp
-*.build_log.htm
-*.HEX
-*.hex
+stm32l0x3-gpio-driver/*.lnp
+stm32l0x3-gpio-driver/*.build_log.htm
+stm32l0x3-gpio-driver/*.HEX
+stm32l0x3-gpio-driver/*.hex
 
 
 # Build Files
-*._IA
-*.__[Ii]
-*._[Ii][Ii]
+stm32l0x3-gpio-driver/*._IA
+stm32l0x3-gpio-driver/*.__[Ii]
+stm32l0x3-gpio-driver/*._[Ii][Ii]
 
 # project
-*.uvgui.*
-*.uvguix.*
+stm32l0x3-gpio-driver/*.uvgui.*
+stm32l0x3-gpio-driver/*.uvguix.*
 
 
 # End of https://www.gitignore.io/api/keil
