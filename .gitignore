@@ -1,52 +1,61 @@
+# Created by https://www.gitignore.io/api/keil
+# Edit at https://www.gitignore.io/?templates=keil
+# Custom edit by: Kristoffer Dominic Amora
+
+### Keil ###
+# MX Ptoject
+stm32l0x3-gpio-driver/*.mxproject
+
+# --- STMCubeMX ---
+#stm32l0x3-gpio-driver/*.ioc
+
+### --- MDK ARM build output files --- ###
 # Prerequisites
-*.d
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.d
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.dep
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.crf
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# --- Object files ---
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.o
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.obj
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.OBJ
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# --- Listing Files ---
+#stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.COD
+#stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.cod
+#stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.[Ii]
+stm32l0x3-gpio-driver/MDK-ARM/*.LST
+stm32l0x3-gpio-driver/MDK-ARM/*.lst
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.MAP
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.map
+#stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.[Mm]51
+#stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.[Mm]66
+#stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.SCR
+#stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.scr
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.sct
 
-# Precompiled Headers
-*.gch
-*.pch
+# --- LINK output ---
+stm32l0x3-gpio-driver/MDK-ARM/*.ABS
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# --- Libraries ---
+#stm32l0x3-gpio-driver/MDK-ARM/*.lib
+#stm32l0x3-gpio-driver/MDK-ARM/*.LIB
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# --- uVision Output ---
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.lnp
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.build_log.htm
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.htm
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.HEX
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.hex
+stm32l0x3-gpio-driver/MDK-ARM/stm32l0x3-gpio-driver/*.axf
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# --- Build Files ---
+#stm32l0x3-gpio-driver/MDK-ARM/*._IA
+#stm32l0x3-gpio-driver/MDK-ARM/*.__[Ii]
+#stm32l0x3-gpio-driver/MDK-ARM/*._[Ii][Ii]
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# --- uVision Project ---
+stm32l0x3-gpio-driver/MDK-ARM/*.uvgui.*
+stm32l0x3-gpio-driver/MDK-ARM/*.uvguix.*
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# End of https://www.gitignore.io/api/keil
