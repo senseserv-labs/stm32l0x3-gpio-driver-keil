@@ -7,10 +7,10 @@ Generates a square wave ⎍⎍⎍⎍⎍⎍⎍⎍⎍ at Port A pin 5 and Port B p
 * Pulse width: ~1 second
 * Period: ~1.9-2 seconds
 * Duty cycle: 50%
-``
+```
            |~~~~~|     |~~~~~|
            |     |     |     |
            |     |     |     |
            |     |     |     |
       ~~~~~|     |~~~~~|     |~~~~~
-``
+```
